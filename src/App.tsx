@@ -62,7 +62,7 @@ import { AppService } from './services/app.service';
 import { Users } from './components/Users/Users';
 import { useState } from 'react';
 
-function App()  {
+const App = () =>  {
 
   const [user, setUser] = useState<any>();
   const [users, setUsers] = useState<any>([]);
