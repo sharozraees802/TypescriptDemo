@@ -15,7 +15,7 @@
 // }
 
 export class AppService {
-  private user = [
+  private users = [
     {
       firstName: "Sylvester Friesen",
       lastName: "Gulgowski",
@@ -32,4 +32,11 @@ export class AppService {
       email: "Martin_Barton@hotmail.com",
     },
   ];
+
+  public getUser(): any {
+    return this.users;
+  }
+  public addUser(user: any) {
+    return this.users.push(user);
+  }
 }
