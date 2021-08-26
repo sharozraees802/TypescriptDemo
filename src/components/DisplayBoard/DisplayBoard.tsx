@@ -1,13 +1,22 @@
 import React from "react";
 
-const DisplayBoard = () => {
+interface IDisplayBoard {
+  numberOfUsers: number;
+  getAllUsers: Function;
+}
+
+const DisplayBoard = ({ numberOfUsers, getAllUsers }: IDisplayBoard) => {
   return (
     <div className="display-board">
-      <h4>Users Craete</h4>
-      <div className="number">0</div>
+      <h4 style={{ color: "white" }}>Users Created</h4>
+      <div className="number">{numberOfUsers}</div>
       <div className="btn">
-        <button type="button" className="btn btn-warning">
-          Get all User
+        <button
+          type="button"
+          onClick={() => getAllUsers()}
+          className="btn btn-warning"
+        >
+          Get all Users
         </button>
       </div>
     </div>

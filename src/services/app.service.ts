@@ -17,25 +17,26 @@
 export class AppService {
   private users = [
     {
-      firstName: "Sylvester Friesen",
-      lastName: "Gulgowski",
-      email: "Jerald18@gmail.com",
+      firstName: "fname1",
+      lastName: "lname1",
+      email: "abc@gmail.com",
     },
     {
-      firstName: "Elena Kub",
-      lastName: "Reichert",
-      email: "Ursula.Ratke0@hotmail.com",
+      firstName: "fname1",
+      lastName: "lname1",
+      email: "abc@gmail.com",
     },
     {
-      firstName: "Dana Romaguera",
-      lastName: "King",
-      email: "Martin_Barton@hotmail.com",
+      firstName: "fname1",
+      lastName: "lname1",
+      email: "abc@gmail.com",
     },
   ];
 
-  public getUser(): any {
+  public getUsers(): any {
     return this.users;
   }
+
   public addUser(user: any) {
     return this.users.push(user);
   }

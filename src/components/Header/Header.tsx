@@ -1,9 +1,8 @@
 /**
- * 
+ *
  * @func Header
  * this is the header component to use a interface
-*/
-
+ */
 
 /* import React from 'react'*/
 
@@ -21,15 +20,12 @@
 
 // }
 
-
 import React from "react";
 
-export const Header = () =>{
-
-
-    return (
-        <div className="header">
-            <h1>Getting Started with React Using TypeScript</h1>
-        </div>
-    )
-}
+export const Header = () => {
+  return (
+    <div className="header">
+      <h1>Getting Started with React Using TypeScript</h1>
+    </div>
+  );
+};
